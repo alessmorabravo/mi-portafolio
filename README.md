@@ -13,14 +13,14 @@ Puedes ver el portafolio en acción aquí:
 🔗 **[Ver Demo](https://alessmorabravo.github.io/mi-portafolio/)**  
 
 ## 👨‍💻 Autor  
-Desarrollado por **[Alessandro Mora Bravo]**.  
-Apasionado por el desarrollo web y siempre aprendiendo nuevas tecnologías. 🚀  
+
+### 🚀 **Alessandro Mora Bravo**  
+💡 Apasionado por el desarrollo web y siempre aprendiendo nuevas tecnologías.  
 
 ## 📬 Contacto  
-Si tienes preguntas o sugerencias, contáctame en:  
-📧 Contacto: [mora.bravo.alessandro@gmail.com](mailto:mora.bravo.alessandro@gmail.com)  
-👨‍💼 LinkedIn: [Mi Perfil](https://www.linkedin.com/in/alessandro-mora-bravo-357804353/)  
+📧 **Correo:** [mora.bravo.alessandro@gmail.com](mailto:mora.bravo.alessandro@gmail.com)  
+👨‍💼 **LinkedIn:** [Mi Perfil](https://www.linkedin.com/in/alessandro-mora-bravo-357804353/)  
 
 ---
 
-⭐ Si te gusta este repositorio, ¡no olvides dejar un **star** y seguirme en GitHub!  
+⭐ **Si te gusta este repositorio, no olvides dejar un _star_ y seguirme en GitHub!** 🚀  
