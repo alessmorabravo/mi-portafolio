@@ -19,7 +19,7 @@ Apasionado por el desarrollo web y siempre aprendiendo nuevas tecnologías. 🚀
 ## 📬 Contacto  
 Si tienes preguntas o sugerencias, contáctame en:  
 📧 Contacto: [mora.bravo.alessandro@gmail.com](mailto:mora.bravo.alessandro@gmail.com)  
-👨‍💼 LinkedIn: [Mi Perfil](www.linkedin.com/in/alessandro-mora-bravo-357804353)  
+👨‍💼 LinkedIn: [Mi Perfil](https://www.linkedin.com/in/alessandro-mora-bravo-357804353/)  
 
 ---
 
