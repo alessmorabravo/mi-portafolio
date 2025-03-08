@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <!-- link de bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- utilizando swiper.js CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- materialize.css CDN, para el carrousel-->
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- link del carrousel -->
+    <link rel="stylesheet" href="css/carrousel.css" />
+    <!-- scripts para los íconos de fontawesome -->
+
+    <!-- links del botón flotante de whatsapp -->
+    <link rel="stylesheet" href="css/whats.css" />
+    <!-- link de la hoja de estilos de los testimonios -->
+    <link rel="stylesheet" href="css/testimonios.css" />
+    <!-- link de la hoja de estilos del footer -->
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- link de font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/whats2.css" />
+    <!-- aqui terminan los links del botón flotante de whatsapp -->
+
+    <!-- icono de la web -->
+    <link rel="icon" type="images/png" href="images/logo.png" />
+
+    <script
+      src="https://kit.fontawesome.com/a35999a387.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- DIMENSIONES DE BOOTSTRAP -->
+    <!-- 
+     xs < 576px
+     sm ≥ 576px
+     md ≥ 768px
+     lg ≥ 992px
+     xl ≥ 1200px
+     xxl ≥ 1400px
+  -->
+
+    <!-- botón flotante de whatsapp https://www.youtube.com/watch?v=SsFzfcoTVrI&ab_channel=Visualmex -->
+    <div class="nav-bottom">
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      />
+      <div class="popup-whatsapp fadeIn">
+        <div class="content-whatsapp -top">
+          <button type="button" class="closePopup">
+            <i class="material-icons icon-font-color">close</i>
+          </button>
+
+          <p>
+            <img src="images/secretary.png" width="50" /> Hola, ¿En que podemos
+            ayudarte?
+          </p>
+        </div>
+        <div class="content-whatsapp -bottom">
+          <input
+            class="whats-input"
+            id="whats-in"
+            type="text"
+            placeholder="Enviar mensaje..."
+          />
+
+          <button class="send-msPopup" id="send-btn" type="button">
+            <i class="material-icons icon-font-color--black">send</i>
+          </button>
+        </div>
+      </div>
+      <button type="button" id="whats-openPopup" class="whatsapp-button">
+        <div class="float">
+          <i class="fa fa-whatsapp my-float"></i>
+        </div>
+      </button>
+      <div class="circle-anime"></div>
+    </div>
+
+    <!-- aqui termina el botón flotante de whatsapp -->
+
+    <header id="header">
+      <div class="container__header">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div class="container__nav">
+          <nav id="nav">
+            <ul>
+              <li><a href="#" class="select">INICIO</a></li>
+              <li><a href="#portafolio">PORTAFOLIO</a></li>
+              <li><a href="#contactame">CONTÁCTAME</a></li>
+              <li><a href="aboutUs.html">SOBRE MI</a></li>
+            </ul>
+          </nav>
+
+          <!-- ícono de font-awesome para el menú -->
+          <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container__all" id="container_all">
+      <div class="cover">
+        <div class="container__cover">
+          <div class="container__info">
+            <h1>CREAMOS TU</h1>
+            <h2>PÁGINA WEB</h2>
+            <p style="font-weight: 600">
+              Tu oficina ahora es digital. <br />
+              Consigue con nosotros:
+            </p>
+            <p>- Páginas web seguras y efectivas</p>
+            <p>- Diseños exclusivos según tu marca</p>
+            <p>- Experiencia centrada en el usuario</p>
+            <p>- Asesoría experta para tu negocio</p>
+
+            <!-- botón -->
+            <div>
+              <a class="boton-estilos" href="#contactame"
+                ><i class="far fa-arrow-alt-circle-right"></i>Solicita una
+                Cotización</a
+              >
+            </div>
+          </div>
+
+          <div class="container__vector">
+            <img class="img-fluid" src="images/portada.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <section class="container-fluid w-100 margin-top mb-5 pb-5 hidden-right">
+        <h2 class="subtitulo text-center hidden">¿Por qué nos eligen?</h2>
+        <div class="row justify-content-center w-100">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-4 mb-5 pb-5">
+            <img
+              class="img-col img-fluid hidden-scale"
+              src="images/col-img1.png"
+              alt=""
+            />
+            <h4 class="text-center subtitulo4">Pasión</h4>
+            <div class="linea-hm"></div>
+            <p class="col-p text-center hidden-left">
+              Los proyectos de nuestros clientes nos inspiran y nos sentimos
+              parte de ellos.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-4 mb-5 pb-5">
+            <img
+              class="img-col img-fluid hidden-scale"
+              src="images/col-img2.png"
+              alt=""
+            />
+            <h4 class="text-center subtitulo4">Tecnología</h4>
+            <div class="linea-hm"></div>
+            <p class="col-p text-center hidden-left">
+              Los proyectos de nuestros clientes nos inspiran y nos sentimos
+              parte de ellos.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-4 mb-5 pb-5">
+            <img
+              class="img-col img-fluid hidden-scale"
+              src="images/col-img3.png"
+              alt=""
+            />
+            <h4 class="text-center subtitulo4">Compromiso</h4>
+            <div class="linea-hm"></div>
+            <p class="col-p text-center hidden-left">
+              Los proyectos de nuestros clientes nos inspiran y nos sentimos
+              parte de ellos.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-4 mb-5 pb-5">
+            <img
+              class="img-col img-fluid hidden-scale"
+              src="images/col-img4.png"
+              alt=""
+            />
+            <h4 class="text-center subtitulo4">Calidad</h4>
+            <div class="linea-hm"></div>
+            <p class="col-p text-center hidden-left">
+              Los proyectos de nuestros clientes nos inspiran y nos sentimos
+              parte de ellos.
+            </p>
+          </div>
+          <hr class="w-50" />
+          <!-- div cierre del div-row -->
+        </div>
+      </section>
+
+      <!-- section de los cards de venta -->
+      <section
+        class="w-100 mt-4 p-5 pb-5 mb-5 hidden-right"
+        style="background: #f2f2f2; padding-bottom: 10% !important"
+      >
+        <article class="w-100 hidden-rights">
+          <h2 class="subtitulo text-center hidden">
+            ¿Cómo diseñamos las Páginas Web?
+          </h2>
+          <div class="linea-hm"></div>
+          <p class="col-p text-center fs-5 pt-2 pb-2">
+            Te escuchamos para entenderte y co-creamos contigo.
+          </p>
+          <div class="row w-100">
+            <div class="col-lg-4 mb-5">
+              <div class="card hidden-right">
+                <div class="card-img">
+                  <img
+                    class="img-card hidden-scale"
+                    src="images/card-img1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="title text-center pb-3">
+                  <h2 class="hidden-left" style="margin-top: -10px !important">
+                    Te entendemos
+                  </h2>
+                </div>
+                <div class="paragraph">
+                  <p class="col-p text-center p-1 hidden-left">
+                    Te escuchamos pues necesitamos entender tu negocio, definir
+                    tu publico objetivo y mostrar al mundo tu propuesta de
+                    valor.
+                  </p>
+                </div>
+                <div class="option">
+                  <ul>
+                    <li>
+                      <i class="fas fa-check hidden-scale"></i> Objetivos Claros
+                    </li>
+                    <li>
+                      <i class="fas fa-check hidden-scale"></i> Bechmarking
+                    </li>
+                    <li>
+                      <i class="fas fa-check hidden-scale"></i> Design Thinking
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5">
+              <div class="card hidden-right">
+                <div class="card-img">
+                  <img
+                    class="img-card hidden-scale"
+                    src="images/card-img2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="title text-center pb-3">
+                  <h2 class="hidden-left">Diseñamos con pasión</h2>
+                </div>
+                <div class="paragraph">
+                  <p class="col-p text-center p-1 hidden-left">
+                    Construimos tu pagina web UX enfocada en mostrar tu
+                    identidad gráfica, generación de confianza y conversión de
+                    visitantes en prospectos.
+                  </p>
+                </div>
+                <div class="option">
+                  <ul>
+                    <li class="hidden-left">
+                      <i class="fas fa-check hidden-scale"></i> Experiencia de
+                      Usuario
+                    </li>
+                    <li class="hidden-left">
+                      <i class="fas fa-check hidden-scale"></i> Seguimos tu
+                      linea Gráfica
+                    </li>
+                    <li class="hidden-left">
+                      <i class="fas fa-check hidden-scale"></i> Diseñamos para
+                      Móviles
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5">
+              <div class="card hidden-right">
+                <div class="card-img">
+                  <img
+                    class="img-card hidden-scale"
+                    src="images/card-img3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="title text-center pb-3">
+                  <h2 class="hidden-left">Validamos cada avance</h2>
+                </div>
+                <div class="paragraph">
+                  <p class="col-p text-center p-1 hidden-left">
+                    Cada avance lo validamos contigo pues nos gusta co-crear,
+                    así medimos y mejoramos. Tus resultados son los nuestros.
+                  </p>
+                </div>
+                <div class="option">
+                  <ul>
+                    <li class="hidden-left">
+                      <i class="fas fa-check hidden-scale"></i> Entregas rápidas
+                    </li>
+                    <li class="hidden-left">
+                      <i class="fas fa-check hidden-scale"></i> Medimos y
+                      mejoramos
+                    </li>
+                    <li class="hidden-left">
+                      <i class="fas fa-check hidden-scale"></i> Comunicación
+                      constante
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Sección Portafolio -->
+      <div class="container w-100">
+        <h2 id="portafolio" class="subtitulo text-center p-3 hidden-left">
+          Portafolio
+        </h2>
+        <h4 class="subtitulo4 text-center">Páginas Web</h4>
+        <div class="linea-hm"></div>
+
+        <div class="row justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-lg-5 col-md-6 mb-4 hidden-right">
+            <div class="card">
+              <img
+                src="images/proyecto1.png"
+                class="card-img-top img-fluid"
+                alt="Proyecto 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Rediseño de Evernote</h5>
+                <p class="card-text">
+                  Rediseño innovador inspirado en redes sociales, usando
+                  Bootstrap para la estructura y JavaScript para animaciones.
+                  Mejoré la experiencia visual y de usuario con un estilo más
+                  moderno y atractivo.
+                </p>
+                <a href="evernote.html" class="btn btn-primary" target="_blank"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-5 col-md-6 mb-4 hidden-right">
+            <div class="card">
+              <img
+                src="images/proyecto2.png"
+                class="card-img-top img-fluid"
+                alt="Proyecto 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Clínica Veterinaria RONDON</h5>
+                <p class="card-text">
+                  Rehice la página aplicando mi propio estilo. Implementé un
+                  carrusel de fotos y agregué animaciones en botones con
+                  JavaScript para una mejor interacción.
+                </p>
+                <a
+                  href="veterinaria.html"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- testimonios de clientes -->
+      <article id="article">
+        <!-- Swiper -->
+        <div class="swiper mySwiper hidden-right">
+          <!-- Contenedor para el título -->
+          <div class="swiper-header">
+            <h2 class="swiper-title hidden-left">Nuestros Testimonios</h2>
+          </div>
+
+          <div class="swiper-wrapper">
+            <!-- EMPIEZA EL TESTIMONIO -->
+            <div class="swiper-slide">
+              <div class="testimonialBox">
+                <img
+                  src="images/comillas-derecha.png"
+                  class="comillas"
+                  alt="comillas-derecha"
+                />
+                <div class="content">
+                  <p>
+                    Gracias al programador Alessandro Mora, ahora tengo una
+                    página web moderna y funcional...
+                  </p>
+                  <div class="details">
+                    <div class="imgBx">
+                      <img
+                        src="images/user-M.png"
+                        class="user hidden-scale"
+                        alt=""
+                      />
+                    </div>
+                    <h3>
+                      Vanessa Hidalgo<br /><span>Cliente satisfecha</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ACABA EL TESTIMONIO -->
+
+            <div class="swiper-slide">
+              <div class="testimonialBox">
+                <img
+                  src="images/comillas-derecha.png"
+                  class="comillas"
+                  alt="comillas-derecha"
+                />
+                <div class="content">
+                  <p>
+                    Estoy muy agradecido con Alessandro por su compromiso y
+                    dedicación...
+                  </p>
+                  <div class="details">
+                    <div class="imgBx">
+                      <img
+                        src="images/user-V.png"
+                        class="user hidden-scale"
+                        alt=""
+                      />
+                    </div>
+                    <h3>Nilton Huauya<br /><span>Emprendedor</span></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonialBox">
+                <img
+                  src="images/comillas-derecha.png"
+                  class="comillas"
+                  alt="comillas-derecha"
+                />
+                <div class="content">
+                  <p>
+                    Quería una web sencilla pero profesional, y el resultado
+                    superó mis expectativas...
+                  </p>
+                  <div class="details">
+                    <div class="imgBx">
+                      <img
+                        src="images/user-M.png"
+                        class="user hidden-scale"
+                        alt=""
+                      />
+                    </div>
+                    <h3>Maria Jose<br /><span>Freelancer</span></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- FORMULARIO -->
+      <div class="container formulario mt-5 mb-5 w-100">
+        <div class="row">
+          <div>
+            <div id="contactame"></div>
+            <h1
+              style="letter-spacing: -1px"
+              class="subtitulo text-center p-5 hidden-left"
+            >
+              Contáctate conmigo
+            </h1>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img
+              class="img-fluid hidden-scale"
+              src="images/formulario_img.jpg"
+              alt=""
+              style="max-width: 516px"
+            />
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="mb-4">
+              <div class="mb-4">
+                <label
+                  for="formGroupExampleInput"
+                  class="form-label subtitulo4 hidden-left"
+                  >Nombre Completo</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Nombre Completo"
+                />
+              </div>
+
+              <label
+                for="exampleFormControlInput1"
+                class="form-label subtitulo4 hidden-left"
+                >Correo Electrónico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Correo Electrónico"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label subtitulo4 hidden-left"
+                >Mensaje</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button
+              style="
+                background-color: #3434d3;
+                letter-spacing: 1px;
+                font-weight: bold;
+              "
+              class="btn btn-primary p-2 w-100"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER - PIE DE PÁGINA -->
+      <footer class="w-100 mt-5">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+
+        <ul class="social_icon social_container">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/alessandro-mora-bravo-357804353"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/alessmorabravo" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+
+        <p>© Diseñado por Alessandro Josue Mora Bravo</p>
+      </footer>
+      <!-- no borrar este div porque es para que toda la página se mueva al hacer click en el botón del menú es el div de container__all -->
+    </div>
+
+    <!-- REDES SOCIALES -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script del botón flotante de whatsapp -->
+    <script src="js/whats1.js"></script>
+
+    <!-- utilizando swiper.js CDN -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 40,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+      });
+    </script>
+
+    <!-- materialize.js CDN para el carrousel -->
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+    <!-- script con mis animaciones -->
+    <script src="js/js.js"></script>
+
+    <script src="js/carrusel.js"></script>
+
+    <script src="js/animacion_scroll.js"></script>
+  </body>
+</html>

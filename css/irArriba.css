@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* contenedor del icono de ir arriba */
+.go-top-container {
+  position: fixed;
+  bottom: 1rem;
+  right: -10px;
+  width: 4rem;
+  height: 4rem;
+  z-index: -1;
+}
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background: #702f8a;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 1000;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* clase que le agregaremos al elemento container con javascript */
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.4s ease-in-out;
+  width: 2.8rem;
+  height: 2.8rem;
+  z-index: 11;
+  box-shadow: 2px 2px  5px #3e3e3e;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+  50% {
+    width: 4.3rem;
+    height: 4.3rem;
+  }
+  100% {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
+/* boton responsive */
+@media (max-width: 767px){
+  /* contenedor del icono de ir arriba */
+.go-top-container {
+  position: fixed;
+  bottom: 1rem;
+  right: -30px !important; 
+  width: 4rem;
+  height: 4rem;
+  z-index: -1;
+}
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background:  rgba(0, 0, 0, 0.5); 
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1rem !important;
+  font-weight: 1000;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* clase que le agregaremos al elemento container con javascript */
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.4s ease-in-out;
+  width: 2.4rem;
+  height: 2.4rem;
+  z-index: 11;
+  box-shadow: 2px 2px  5px #3e3e3e;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+}

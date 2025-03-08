@@ -1,0 +1,463 @@
+/* fuentes para el FOOTER */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+/* fuente para el copyright */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #171717;
+  color: #fffcf6;
+}
+/* TRABAJANDO CON LAS REDES SOCIALES */
+.redes-sociales {
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  margin: 30px 0;
+  z-index: 1000;
+}
+.redes-sociales ul {
+  margin-left: 0;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1000;
+}
+.redes-sociales li {
+  position: relative;
+  transform: translateX(-118px);
+  background: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  padding: 11px 0;
+  transition: 0.5s;
+  width: 153px;
+  border-radius: 0 200px 200px 0;
+  margin: 10px 0;
+}
+li:hover:nth-child(1) {
+  background: #3b5998;
+}
+li:hover:nth-child(2) {
+  background: #55acee;
+}
+li:hover:nth-child(3) {
+  background: #bb0000;
+}
+li:hover:nth-child(4) {
+  background: #cb2027;
+}
+li:hover {
+  transform: translateX(-32px);
+}
+.redes-sociales ul li a {
+  font-weight: bold;
+  color: #fff;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding-left: 10px;
+}
+i {
+  margin-left: 10px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  color: #000;
+  background: #fff;
+}
+.icon {
+  font-size: 26px;
+}
+.fa-facebook {
+  margin-left: 0px;
+  position: relative;
+  left: 20px;
+}
+.fa-twitter {
+  margin-left: 15px;
+  position: relative;
+  left: 23px;
+}
+.fa-youtube {
+  position: relative;
+  left: 16px;
+}
+.fa-instagram {
+  position: relative;
+  left: 3px;
+}
+
+/* EFECTO HOVER DE LOS ICONOS DE LAS REDES SOCIALES */
+.fa-facebook:hover {
+  color: #3b4198;
+}
+.fa-twitter:hover {
+  color: #66b5f1;
+}
+.fa-youtube:hover {
+  color: #bb0000;
+}
+.fa-instagram:hover {
+  color: #cb2027;
+}
+/* ---------------------------------- */
+
+/* LOGO */
+.logo img {
+  margin: 0 auto !important;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+/* color de los párrafos */
+p {
+  color: #e5e2dd;
+}
+.subtitulo {
+  color: #d04f27;
+}
+.portada {
+  width: 100%;
+  height: auto;
+}
+.img {
+  height: auto;
+  width: 100%;
+}
+
+/* imagen con comas verdes */
+.comas {
+  display: block;
+  height: auto;
+  margin: 30px auto;
+  max-width: 100%;
+  width: auto;
+}
+/* ------------------------- */
+.contenedor-final {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+.comprar-palabra {
+  color: #cf5d20;
+  cursor: pointer;
+  transition: 2s;
+}
+.comprar-palabra:hover {
+  color: #f03f0a;
+}
+/* FOOTER */
+.footer {
+  padding: 70px 0;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+.container-footer {
+  max-width: 1170px;
+  margin: auto;
+}
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-col ul li {
+  display: block; /* Mantiene los elementos en columna */
+}
+
+/* quitando estilos a bootstrap */
+.footer-col ul li:hover {
+  background: none !important;
+  transition: none !important;
+  padding-right: 0 !important;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #bbbbbb !important;
+  text-decoration: none;
+  font-weight: 300;
+  display: inline-block; /* Solo ocupa el tamaño del texto */
+  padding: 5px 0; /* Hace que el hover sea más cómodo sin afectar la estructura */
+  transition: transform 0.3s ease, color 0.3s ease !important;
+}
+
+/* efecto HOVER cuando colocamos el cursor a los links del footer */
+.footer-col ul li a:hover {
+  color: #ffffff !important;
+  transform: translateX(8px); /* Movimiento más sutil y sin saltos bruscos */
+}
+/* ------------------------------------------------------------- */
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  background: none !important;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  margin: 1px;
+  padding-right: 10px;
+  /* padding: 10px; */
+  font-size: 18px;
+  transition: all 1s ease;
+  /* background-color: coral; */
+}
+/* Efecto HOVER en las redes sociales del FOOTER */
+.bxl-facebook:hover {
+  color: #0050fd;
+}
+.bxl-twitter:hover {
+  color: #0091ff;
+}
+.bxl-youtube:hover {
+  color: #bb0000;
+}
+.bxl-instagram-alt:hover {
+  color: #bb0000;
+}
+
+/* COPYRIGHT */
+.copyright {
+  color: #ecf0f1 !important;
+  letter-spacing: 4px;
+  font-family: "Lato", sans-serif;
+  line-height: 100px;
+  font-size: 17px;
+  margin-top: 80px !important;
+}
+
+/* casi tablet */
+@media (max-width: 992px) {
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .centrar {
+    text-align: center;
+  }
+  /* modificando la barra de redes sociales */
+  .redes-sociales {
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    margin: 28px 0;
+    z-index: 1000;
+  }
+  .redes-sociales ul {
+    margin-left: 0;
+    width: 25%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+  }
+  .redes-sociales li {
+    position: relative;
+    transform: translateX(-118px);
+    background: rgba(0, 0, 0, 0.5);
+    list-style: none;
+    padding: 10px 0;
+    transition: 0.5s;
+    width: 149px;
+    border-radius: 0 200px 200px 0;
+    margin: 20px 0;
+  }
+  li:hover:nth-child(1) {
+    background: #3b5998;
+  }
+  li:hover:nth-child(2) {
+    background: #55acee;
+  }
+  li:hover:nth-child(3) {
+    background: #bb0000;
+  }
+  li:hover:nth-child(4) {
+    background: #cb2027;
+  }
+  li:hover {
+    transform: translateX(-32px);
+  }
+  .redes-sociales ul li a {
+    font-weight: bold;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+  i {
+    margin-left: 10px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    color: #000;
+    background: #fff;
+  }
+  .icon {
+    font-size: 26px;
+  }
+  .fa-facebook {
+    margin-left: 0px;
+    position: relative;
+    left: 20px;
+  }
+  .fa-twitter {
+    margin-left: 15px;
+    position: relative;
+    left: 23px;
+  }
+  .fa-youtube {
+    position: relative;
+    left: 16px;
+  }
+  .fa-instagram {
+    position: relative;
+    left: 3px;
+  }
+
+  /* EFECTO HOVER DE LOS ICONOS DE LAS REDES SOCIALES */
+  .fa-facebook:hover {
+    color: #3b4198;
+  }
+  .fa-twitter:hover {
+    color: #66b5f1;
+  }
+  .fa-youtube:hover {
+    color: #bb0000;
+  }
+  .fa-instagram:hover {
+    color: #cb2027;
+  }
+  /* ------------------------------------------------ */
+
+  /* footer responsive */
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  /* iconos redes sociales */
+  .footer-col .social-links a {
+    margin: 3px;
+    font-size: 22px;
+  }
+}
+/* Para CELULARES y más pequeños */
+@media (max-width: 576px) {
+  /* logo de la empresa */
+  .logo img {
+    margin-top: 35px !important;
+  }
+  .titulo {
+    font-size: 28px !important;
+  }
+  .sub-titulo {
+    font-size: 18px !important;
+  }
+  .sub-titulo2 {
+    font-size: 22px !important;
+  }
+  /* quitando la barra de redes sociales */
+  .redes-sociales {
+    display: none;
+  }
+  /* FOOTER RESPONSIVE */
+  .footer-col {
+    width: 100%;
+  }
+  /* tamaño de letra del titulo (FOOTER) */
+  .footer-col h4 {
+    font-size: 23px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  /* tamaño de letra de los enlaces del FOOTER */
+  .footer-col ul li a {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb !important;
+    display: block; /* Mantiene el tamaño estable */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out !important;
+  }
+
+  .footer-col ul li {
+    overflow: hidden; /* Evita cualquier efecto inesperado */
+  }
+
+  /* iconos redes sociales */
+  .footer-col .social-links a {
+    /* flex-wrap: wrap; */
+    margin: 6px;
+    font-size: 26px;
+  }
+  /* COPYRIGHT (DERECHOS DE AUTOR) */
+  .copyright {
+    letter-spacing: 0;
+    font-family: Arial !important;
+    font-size: 10.5px;
+    text-align: center;
+  }
+}
+
+/* animación al abrir la web */
+body {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Opcional: movimiento hacia abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
